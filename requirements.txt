@@ -1,7 +1,7 @@
 streamlit
-requests==2.25.1
+requests==2.25.1          # pinned to avoid urllib3 appengine import error
 python-dotenv
 pillow
-pyrebase4
-pycryptodome
-setuptools
+pyrebase4                # maintained pyrebase fork without old requests dependency
+pycryptodome             # for crypto dependencies pyrebase4 might need
+setuptools               # general packaging
