@@ -11,7 +11,7 @@ from firebase_utils import save_rewrite, load_recent_rewrites
 
 # --- Setup ---
 load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY")
+API_KEY = st.secrets["gemini"]["api_key"]
 
 # --- Functions ---
 def make_rounded(image, radius=None):
