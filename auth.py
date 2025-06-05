@@ -1,11 +1,21 @@
 import pyrebase
-import json
+import os
 
-with open("firebase_config.json") as f:
-    firebase_config = json.load(f)
+# Build firebase_config dict from environment variables
+firebase_config = {
+    "apiKey": os.getenv("FIREBASE_API_KEY"),
+    "authDomain": os.getenv("FIREBASE_AUTH_DOMAIN"),
+    "projectId": os.getenv("FIREBASE_PROJECT_ID"),
+    "storageBucket": os.getenv("FIREBASE_STORAGE_BUCKET"),
+    "messagingSenderId": os.getenv("FIREBASE_MESSAGING_SENDER_ID"),
+    "appId": os.getenv("FIREBASE_APP_ID"),
+    "measurementId": os.getenv("FIREBASE_MEASUREMENT_ID"),
+    "databaseURL": os.getenv("FIREBASE_DATABASE_URL"),
+}
 
 firebase = pyrebase.initialize_app(firebase_config)
 auth = firebase.auth()
+
 
 def login_user(email, password):
     try:
