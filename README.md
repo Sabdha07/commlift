@@ -21,7 +21,7 @@ Whether you're writing to a professor, applying for an opportunity, or just want
 ## 🚀 Try CommLift Live
 
 Use the app instantly at:  
-👉 [https://your-streamlit-link.streamlit.app](https://your-streamlit-link.streamlit.app)
+👉 [https://commlift.streamlit.app/](https://commlift.streamlit.app/)
 
 ---
 
