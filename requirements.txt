@@ -1,7 +1,7 @@
+pip
 streamlit
-requests==2.25.1
+requests
 python-dotenv
 pillow
 pyrebase4
-pycryptodome
 setuptools
